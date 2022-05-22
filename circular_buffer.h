@@ -13,8 +13,8 @@ typedef struct {
 
 typedef enum {
 	BUFFER_SUCCESS 	= 0,
-	BUFFER_FULL 		= 1,
-	BUFFER_EMPTY 		= 2
+	BUFFER_FULL 	= 1,
+	BUFFER_EMPTY 	= 2
 } eCircular_buffer_status;
 
 eCircular_buffer_status tCircular_buffer_init(tCircular_buffer *hBuffer, uint16_t size);

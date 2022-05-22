@@ -29,7 +29,7 @@ eCircular_buffer_status tCircular_buffer_pop(tCircular_buffer *hBuffer, uint8_t 
     if (hBuffer->head == hBuffer->tail)  // if the head == tail, we don't have any data
         return BUFFER_EMPTY;
 		
-	int next_tail;
+    int next_tail;
 	next_tail = (hBuffer->tail + 1) % hBuffer->size;  // next is where head will point to after this read.
 
     *data = hBuffer->buffer[hBuffer->tail];  // Read data and then move
